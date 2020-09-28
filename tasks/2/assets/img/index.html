@@ -1,11 +1,23 @@
+<!DOCT YPE html>
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
-<body>
+<head>
+	<title>CYBERSEC CLINIQUE</title>
+	<link rel="stylesheet" href="src/css/style.css">
 
-<!-- Navigation -->
+</head>
+<style>
+	body{
+		background-color: #ADD8E6  ;
+	}
+</style>
+<body>
+	
+	<h1> WELCOME TO CYBERSEC CLINIQUE</h1>
+
+	<sript src="src/js/main.js"> </script>
+	
+	<!-- Navigation -->
 <nav class="w3-bar w3-black">
   <a href="#home" class="w3-button w3-bar-item">Home</a>
   <a href="#about" class="w3-button w3-bar-item">About</a>
@@ -13,30 +25,27 @@
   <a href="#contact us" class="w3-button w3-bar-item">Contact Us</a>
 </nav>
 
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="img_logo.jpg" style="width:100%">
-  <img class="mySlides" src="img_img1.jpg" style="width:100%">
-</section>
+	 <div class="slide-container">
+	 	<div class="image-container">
+	 		<img src="img1.jpeg" class="slider-image">
+	 		<img src="img2.jpeg" class="slider-image">
+	 		<img src="img3.jpeg" class="slider-image">
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+	 	</div>
+	
+	 </div>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
 
+
+<footer>
+	<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#about" class="w3-button w3-bar-item">About</a>
+  <a href="#gallery" class="w3-button w3-bar-item">Gallery</a>
+  <a href="#contact us" class="w3-button w3-bar-item">Contact Us</a>
+</nav>
+</footer>
 </body>
-</html>
+<script src="javascript/main.js"></script>
 
+</html>
